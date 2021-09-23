@@ -1,0 +1,124 @@
+{% extends 'base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>index</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+{% block content %}
+<style>
+   .body
+   {
+    margin:0;
+    padding:0;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    transform-style:preserve-3d;
+
+  }
+
+
+
+
+ .bg-cover{
+    background-image:url('/static/banner.jpg');
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin: 0px;
+    background-position:center;
+    background-size: 100%;
+    color:white;
+}
+
+    .container
+    {
+        padding:10px;
+        margin-right:10px;
+    }
+    .services-title
+    {
+        font-style: 
+    }
+    .services-thumbnail
+    {
+        min-width:100px;
+
+    }
+</style>
+
+
+
+<div class="jumbotron jumbotron-fluid bg-cover ">
+
+            <div class="container">
+                <h3 class="display-1 text-center" >Our Services</h3>
+                <h5 class="text-center">Our Passion Is Your Success</h5>
+
+            </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="services-title">
+                <h4>Car Deal To Customer</h4>
+                <div class="mr-3 align-self-center">
+                    <img src="{% static 'cardeal.png'%}" style="width:200px" height="230px">
+                </div>
+                <p>Dealerships & Marketplaces. Increase your new car sales, cross-sales and service revenue. Trusted by 1000+ businesses. Analytics and Dashboards. Self-Serve Portals. Cross-Sell Opportunity. Loan Inquiry Capture. Services: Automated Lead Capture, Smart Lead Distribution, Telephony Integration, Marketing Automation, Lead Management, Lead Tracking.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="services-title">
+                <h4>Car Rental</h4>
+                    <div class="mr-3 align-self-center">
+                        <img src="{% static 'rent.png'%}" style="width:200px" height="230px">
+                    </div>
+                    <p> In car rental, ‘luxury’ or ‘premium’ cars are great for travelling in style. These are cars made by high-end brands with luxury features: a sleek look, comfy seats, plush interior and powerful engine</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="services-title">
+                <h4>Car Services</h4>
+                    <div class="mr-3 align-self-center">
+                        <img src="{% static 'services1.png'%}" style="width:160px" height="190px">
+                    </div>
+                    <p>
+A car service is when you take your car to a garage for a routine check up. A mechanic will look at your car's condition and check parts for wear and tear, like brakes, oil, filters and engine belt. ... Regular servicing also helps to prolong the life of your car.</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock content %}
+
+
+
+<script>
+
+
+    <script src="{% static 'https://code.jquery.com/jquery-3.2.1.slim.min.js' %}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' %}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' %}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</script>
+
+
+</body>
+</html>
